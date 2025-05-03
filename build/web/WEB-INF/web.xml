@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="6.1" xmlns="https://jakarta.ee/xml/ns/jakartaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_1.xsd">
+    <servlet>
+        <servlet-name>DisplaySumServlet</servlet-name>
+        <servlet-class>MyPackage.DisplaySumServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DisplaySumServlet</servlet-name>
+        <url-pattern>/DisplaySumServlet</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>DisplaySqaretServlet</servlet-name>
+        <servlet-class>MyPackage.DisplaySqaretServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DisplaySqaretServlet</servlet-name>
+        <url-pattern>/sq</url-pattern>
+    </servlet-mapping>
+</web-app>
