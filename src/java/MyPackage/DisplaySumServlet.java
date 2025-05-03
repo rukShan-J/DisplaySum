@@ -15,17 +15,15 @@ public class DisplaySumServlet extends HttpServlet {
             throws ServletException, IOException {
         
         String number01 = req.getParameter("num1");
-        int number1 = Integer.parseInt(number01);
-        
+        int number1 = Integer.parseInt(number01); 
         int number2 = Integer.parseInt(req.getParameter("num2"));
         
-        int summation = number1 + number2;
-        
+        int summation = number1 + number2;  
         int multiplication =  number1 * number2;
         
         PrintWriter out = res.getWriter();
         
-        out.print(summation);   //not showing this outout because of the "RequestDispatcher"
+//        out.print(summation);   //not showing this outout because of the "RequestDispatcher"
        
                         // key(req), value
         req.setAttribute("multiplication", multiplication);

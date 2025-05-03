@@ -24,7 +24,7 @@ public class DisplaySqaretServlet extends HttpServlet {
         int mult = (int)req.getAttribute("multiplication");
         int summ = (int)req.getAttribute("summation");
         
-        int square =  squ * squ;
+        int square =  summ * summ;
         
         out.println("Multiplication : " + mult);
         out.println("Summation : " + summ);
