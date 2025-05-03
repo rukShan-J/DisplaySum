@@ -21,10 +21,20 @@ public class DisplaySumServlet extends HttpServlet {
         
         int summation = number1 + number2;
         
-        PrintWriter out = res.getWriter();      
-        out.print(summation);
+        int multiplication =  number1 * number2;
+        
+        PrintWriter out = res.getWriter();
+        
+        out.print(summation);   //not showing this outout because of the "RequestDispatcher"
        
-
+                        // key(req), value
+        req.setAttribute("multiplication", multiplication);
+        req.setAttribute("summation", summation);
+        
+        //call servlet from this servlet
+        RequestDispatcher rd = req.getRequestDispatcher("sq");
+        rd.forward(req, res);
+        
     }
 
 
